@@ -102,7 +102,6 @@
 		if(listeners.hasOwnProperty(eventType)){
 			listeners[eventType].forEach(function(handler){
 				handler.apply(this, args);
-				console.log('JVSend: event \'' + eventType +'\' fired');
 			});
 		}
 	}
