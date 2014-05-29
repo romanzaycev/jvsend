@@ -181,6 +181,10 @@
 			return on(eventType, eventHandler);
 		};
 		
+		this.unbind = function(eventType, eventHandler){
+			return unbind(eventType, eventHandler);
+		};
+		
 		this.send = function(message){
 			var s = function(a, d){
 				w.jivo_api.open();
