@@ -1,5 +1,5 @@
 /**
- * @name     Jivosite simple send
+ * @name     Jivosite simple messaging
  * @author   Roman Zaycev
  * @version  1.0.0
  *
@@ -19,9 +19,9 @@
 	};
 
 	var listeners = {
-		'enabled'		: [],
+		'enabled'	: [],
 		'alreadyEnabled': [],
-		'ready'			: []
+		'ready'		: []
 	};
 	
 	var DOMready = function(handler){
@@ -126,8 +126,8 @@
 			trigger('alreadyEnabled');
 			
 			var	cw = w.parent.document.getElementById(config.chatifId).contentWindow,
-				JIVO_HACK_API = hApi = cw.Jivo,
-				JIVO_HACK_IM	= hIm = cw.document;
+				JIVO_HACK_API	= hApi	= cw.Jivo,
+				JIVO_HACK_IM	= hIm	= cw.document;
 			
 			ready = true;
 			trigger('ready', [JIVO_HACK_API, JIVO_HACK_IM]);
