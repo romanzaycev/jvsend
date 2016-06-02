@@ -1,3 +1,5 @@
+# The repo is deprected
+
 jvsend
 ======
 
