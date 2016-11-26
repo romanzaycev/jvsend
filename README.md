@@ -1,4 +1,4 @@
-# The repo is deprected
+# This repository is deprecated!
 
 jvsend
 ======
